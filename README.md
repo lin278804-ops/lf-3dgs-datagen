@@ -86,3 +86,7 @@ NUM_SAMPLES=9 NUM_WORKERS=2 OUTPUT_DIR=output/smoke_set python generate_dataset.
 单个 `.npz` 里有 `sai_stack`（视角数 × 透镜行 × 透镜列）、`particle_centers`、`particle_grid_gt`、粒径、浓度、空间范围和该样本的 `rng_seed`。
 
 默认路径按帧最大值归一化，小粒子在图上不会更暗。需要强度正比于粒径平方时，调用 `generate_light_field_image(..., point_weights=..., normalize=False)`，不要用批量脚本的默认分支。
+
+## 许可证
+
+Apache-2.0，见 [LICENSE](LICENSE)。论文实验所用的数据集生成命令、种子和校验值在 [lf-3dgs-project](https://github.com/lin278804-ops/lf-3dgs-project) 的 `paper/` 下。
